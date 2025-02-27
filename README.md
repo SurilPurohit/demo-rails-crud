@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# demo-rails-crud
+This is a demo Ruby-on-Rails project to get hands on and do CRUD operations with postgresql
+>>>>>>> b04abddf3d6b7622e893daf6805fde3c29811858
