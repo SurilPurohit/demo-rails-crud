@@ -1,0 +1,23 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+  username: postgres
+  password: newpassword
+  host: 127.0.0.1
+  port: 5432
+
+development:
+  <<: *default
+  database: demo_employee_management_development
+
+test:
+  <<: *default
+  database: demo_employee_management_test
+
+production:
+  <<: *default
+  database: demo_employee_management_production
+  username: demo_user
+  password: <%= ENV['DEMO_DATABASE_PASSWORD'] %>
+  host: <%= ENV['DEMO_DATABASE_HOST'] %>
